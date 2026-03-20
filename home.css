@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+  padding: 0;
+}
+.header_box {
+  height: 70px;
+  width: 100%;
+}
+.header_box>img{
+    width: 170px;
+    margin-top: 13px;
+    margin-left: 100px;
+}    
+.banner_img {
+    height: 640px;
+    width: 100%;
+}
+.banner_img>img{
+    height: 100%;
+    width: 100%;
+}
+.photo_title {
+    width: 100%;
+    background-color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+.photo_title>.title_two {
+    margin-left: 5px;
+}
+.divStars{
+    height: auto;
+    width: 80%; /* 适当增加宽度 */
+    margin: 0 auto;
+    background: #f8f9fa; /* 添加浅灰色背景 */
+    border-radius: 12px; /* 圆角 */
+    padding: 25px; /* 内边距 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 阴影效果 */
+}
+.divFocus{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; /* 让图片和文字等高 */
+    gap: 30px; /* 增加图片与文字间距 */
+    padding: 25px; /* 增加内边距 */
+}
+.img{
+    width: 300px; /* 稍微增加图片宽度 */
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch; /* 拉伸图片与文字等高 */
+    height: auto; /* 高度自适应 */
+}
+.img>img{ 
+    width: 100%;
+    height: 100%; /* 图片高度100%填充容器 */
+    object-fit: cover;
+    border-radius: 12px; /* 增加圆角 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.Text{
+    flex: 1;
+    display: flex !important; /* 强制使用flex布局 */
+    flex-direction: column !important; /* 强制垂直排列 */
+    gap: 25px; /* 段落间距 */
+    justify-content: space-between; /* 均匀分布 */
+    min-height: 400px;
+    width: 100%; /* 确保宽度 */
+}
+
+/* 三个文字段落的统一样式 */
+.Text > div {
+    background: white;
+    padding: 20px 25px; /* 增加内边距 */
+    border-radius: 10px; /* 增加圆角 */
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.8; /* 增加行高 */
+    font-size: 16px; /* 增加字体大小 */
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    flex: 1; /* 让三个段落等高 */
+    display: flex;
+    align-items: center; /* 文字垂直居中 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+.Text > div:hover,
+.Text > div:focus {
+    transform: translate3d(0, -2px, 0); /* 启用GPU加速 */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    outline: none; /* 移除焦点轮廓 */
+}
+
+/* 学院风采区域样式 - 6个图片一行排列 */
+.school {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* 不换行 */
+    justify-content: flex-start; /* 从左到右排列 */
+    gap: 15px; /* 图片间距 */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    overflow-x: auto; /* 如果一行放不下，允许水平滚动 */
+}
+
+.school img {
+    flex: 0 0 auto; /* 不伸缩，保持固定大小 */
+    width: 200px; /* 稍微增加宽度 */
+    height: 160px; /* 提升图片高度 */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.school img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* 媒体视角区域样式 */
+.view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.view1, .view2, .view3 {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.view1:hover, .view2:hover, .view3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.view1 img, .view2 img, .view3 img {
+    width: 100%;
+    height: 240px; /* 扩大图片高度 */
+    object-fit: cover;
+}
+
+.title1, .title2, .title3 {
+    padding: 25px; /* 扩大内边距 */
+    font-size: 18px; /* 扩大字体 */
+    line-height: 1.7; /* 增加行高 */
+    color: #333;
+    min-height: 100px; /* 确保文字区域有足够高度 */
+}
+
+/* footer_box布局样式 */
+.footer_box {
+    background: #2e8b57; /* 深绿色背景 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* 左右两侧分布 */
+    align-items: center; /* 垂直居中 */
+    padding: 20px 20px; /* 缩小内边距 */
+    color: white;
+    margin-top: 20px; /* 缩小上边距 */
+    min-height: 150px; /* 固定最小高度 */
+}
+
+/* left区域样式 - 垂直排列 */
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* 缩小间距 */
+    flex: 1;
+    margin-left: 100px;
+    max-width: 350px; /* 缩小最大宽度 */
+    padding: 15px 0; /* 添加上下内边距 */
+}
+
+.left > div {
+    font-size: 14px; /* 缩小字体 */
+    line-height: 1.5;
+    padding: 5px 0; /* 添加内边距 */
+}
+
+.left > div:first-child {
+    font-size: 16px; /* 缩小字体 */
+    font-weight: bold;
+}
+
+/* right区域样式 */
+.right {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.left2 > div {
+    margin-right: 40px;
+    font-size: 14px;
+    padding: 9px 0;
+}
+
+.right2 > div {
+    font-size: 14px;
+    padding: 9px 0;
+}
+
+
+
+
+.left2 > div:hover, .right2 > div:hover {
+    color: #a8e6cf;
+}
+
+
+.left > div:first-child {
+    font-size: 16px; /* 缩小字体 */
+    font-weight: bold;
+}
+
+
+
+
+/* 媒体视角标题样式 */
+.photo_title {
+    text-align: center;
+    margin: 40px 0 25px 0; /* 缩小上下边距 */
+}
+
+.photo_title img {
+    height: 35px; /* 缩小图标 */
+    margin-right: 8px;
+}
+
+.title_two {
+    font-size: 24px; /* 缩小字体 */
+    font-weight: bold;
+    color: #2c3e50;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 提升动画性能 */
+.Text > div {
+    will-change: transform, box-shadow;
+}

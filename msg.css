@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ms_bg{
+    width: 100%;
+    height: 170px;
+}
+.ms_bg>img{
+    width: 100%;
+    height: 100%;
+}
+.ms_content{
+    width: 900px;
+    margin: 0 auto;
+}
+.ms_conUP{
+    margin-top: 30px;
+}
+.ms_conUP>div{
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+.ms_conUP>p{ 
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.ms_conRT{
+    text-align: right;
+}
+.ms_conDown{
+    margin-top: 50px;
+}
+.form_box{
+    margin-bottom: 25px;
+}
+input{
+    width: 260px;
+    height: 35px;
+    border: 1px solid #dcdcdc;
+   outline: none;
+}
+.form_box>div>label{
+    display: inline-block;
+    font-size: 14px;
+    width: 70px;
+    font-weight: bold;
+}
+.form_box>div>textarea{
+    width: 260px;
+    height: 150px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+.form_btn_post{
+    text-align: center;
+}
+.form_btn_post>button{
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.form_btn_post>button:hover{
+    background-color: #007b51;
+    color: white
+}
+.ms_footer{
+    width: 100%;
+    background-color: #007b51;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
